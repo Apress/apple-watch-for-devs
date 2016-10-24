@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>photoshoots</key>
+	<array>
+		<dict>
+			<key>locationBeacon</key>
+			<string>799723ED-3AA3-4FA8-B745-B7EE371F94B1</string>
+			<key>locationName</key>
+			<string>Acme Design Lab</string>
+			<key>locationCoordinate</key>
+			<dict>
+				<key>latitude</key>
+				<real>38.059666</real>
+				<key>longitude</key>
+				<real>-97.95450599999999</real>
+			</dict>
+			<key>beginTime</key>
+			<string>2015-06-15T22:30:00Z</string>
+			<key>endTime</key>
+			<string>2015-06-15T23:30:00Z</string>
+			<key>shootDescription</key>
+			<string>New Widget Shoot</string>
+			<key>projectDescription</key>
+			<string>Acme June Campaign</string>
+			<key>clientContactName</key>
+			<string>Jane Adams</string>
+			<key>plannedShots</key>
+			<array>
+				<dict>
+					<key>shotDescription</key>
+					<string>Shot 1</string>
+					<key>completed</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>shotDescription</key>
+					<string>Shot 2</string>
+					<key>completed</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>shotDescription</key>
+					<string>Shot 3</string>
+					<key>completed</key>
+					<false/>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>locationBeacon</key>
+			<string>799723ED-3AA3-4FA8-B745-B7EE371F94B1</string>
+			<key>locationName</key>
+			<string>Walker&apos;s Beach</string>
+			<key>locationCoordinate</key>
+			<dict>
+				<key>latitude</key>
+				<real>38.059666</real>
+				<key>longitude</key>
+				<real>-97.95450599999999</real>
+			</dict>
+			<key>beginTime</key>
+			<string>2015-06-15T22:30:00Z</string>
+			<key>endTime</key>
+			<string>2015-06-15T23:30:00Z</string>
+			<key>shootDescription</key>
+			<string>New Widget Shoot</string>
+			<key>projectDescription</key>
+			<string>WidgetCo</string>
+			<key>clientContactName</key>
+			<string>Jane Adams</string>
+		</dict>
+		<dict>
+			<key>locationBeacon</key>
+			<string>799723ED-3AA3-4FA8-B745-B7EE371F94B1</string>
+			<key>locationName</key>
+			<string>WidgetMax HDQ</string>
+			<key>locationCoordinate</key>
+			<dict>
+				<key>latitude</key>
+				<real>38.059666</real>
+				<key>longitude</key>
+				<real>-97.95450599999999</real>
+			</dict>
+			<key>beginTime</key>
+			<string>2015-06-15T22:30:00Z</string>
+			<key>endTime</key>
+			<string>2015-06-15T23:30:00Z</string>
+			<key>shootDescription</key>
+			<string>New Widget Shoot</string>
+			<key>projectDescription</key>
+			<string>WidgetMax</string>
+			<key>clientContactName</key>
+			<string>Jane Adams</string>
+		</dict>
+	</array>
+</dict>
+</plist>

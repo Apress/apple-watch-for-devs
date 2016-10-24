@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f8v-GT-RTX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="Rw6-J5-fre">
+            <objects>
+                <controller id="f8v-GT-RTX">
+                    <items>
+                        <button width="1" alignment="left" title="Photoshoots" id="pq2-kD-CH0">
+                            <connections>
+                                <segue destination="j6Y-GH-Ebb" kind="push" id="pCD-Ec-geT"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Accounts" id="Vaj-H9-Shm"/>
+                        <button width="1" alignment="left" title="Projects" id="6Bd-3z-S11"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="223" y="-217"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="zCc-wW-h8R">
+            <objects>
+                <controller id="j6Y-GH-Ebb">
+                    <items>
+                        <button width="1" alignment="left" id="y9o-qM-VPa">
+                            <string key="title">New Widget Photoshoot
+September 12, 12:30 PM</string>
+                            <connections>
+                                <segue destination="xWd-Ke-ESz" kind="push" id="2pi-BV-s9B"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Another Photoshoot" id="gof-g0-IaL"/>
+                        <button width="1" alignment="left" title="One more Photoshoot" id="0Lj-3f-9L8"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="421" y="-217"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="IfN-nx-NKS">
+            <objects>
+                <controller id="xWd-Ke-ESz">
+                    <items>
+                        <label alignment="left" text="Account" id="J8f-p2-G27"/>
+                        <label alignment="left" text="Acme June Campaign" id="sAa-aB-Cvz">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <label alignment="left" text="Project" id="rLL-aN-BrO"/>
+                        <label alignment="left" text="New Widget Photoshoot" id="UaP-j5-YWm">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <label alignment="left" text="Date/Time" id="UCV-UO-8sa"/>
+                        <label alignment="left" text="September 12, 12:30 PM" id="KZa-pB-S38">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="621" y="-216"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="rUV-GE-31I">
+                            <items>
+                                <label alignment="left" alpha="0.40000000000000002" text="Today:" id="7ib-H5-ykm">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <label alignment="left" text="Summary 1" minimumScaleFactor="0.5" id="fLf-Gm-eeP">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <group width="1" alignment="left" id="kxo-Pl-eXP">
+                                    <items>
+                                        <label width="1" alignment="left" text="Summary 2" minimumScaleFactor="0.5" id="Nzm-Iz-cZ8">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <timer width="1" alignment="left" format="short" previewedSeconds="3600" id="2jv-g8-du7">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            <calendarUnit key="units" hour="YES" minute="YES"/>
+                                        </timer>
+                                    </items>
+                                </group>
+                                <label alignment="left" text="Summary 3" minimumScaleFactor="0.5" id="fbZ-2p-wMK">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <label alignment="left" text="Summary 4" minimumScaleFactor="0.5" id="G7q-5z-jP6">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <button width="1" alignment="left" title="Details" id="PSd-6T-BDm">
+                                    <connections>
+                                        <segue destination="83R-il-8Hr" kind="push" identifier="shotInformationSegue" id="QMU-1s-ZVh"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <separator alignment="left" alpha="0.40000000000000002" id="gYE-gP-yZU"/>
+                        <table alignment="left" id="Igh-mV-dB5">
+                            <items>
+                                <tableRow identifier="photoshootsummary" id="gdg-IT-FOv" customClass="PhotoShootSummaryRowController">
+                                    <group key="rootItem" width="1" height="64" alignment="left" layout="vertical" id="tGm-Gi-ubs">
+                                        <items>
+                                            <label alignment="left" text="Label" id="4cW-3m-wzo"/>
+                                            <label alignment="left" text="Label" id="h3r-Dx-cPu">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </label>
+                                            <label alignment="left" text="Label" id="kkK-y4-tJt">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="kkK-y4-tJt" id="8Qk-Dl-Qb9"/>
+                                        <outlet property="locationLabel" destination="4cW-3m-wzo" id="2Io-Fz-toe"/>
+                                        <outlet property="projectLabel" destination="h3r-Dx-cPu" id="wz6-vf-35s"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="shootListTable" destination="Igh-mV-dB5" id="M3K-1o-buj"/>
+                        <outlet property="userSummaryLine1" destination="fLf-Gm-eeP" id="CJH-Vp-4kb"/>
+                        <outlet property="userSummaryLine2" destination="Nzm-Iz-cZ8" id="Z0w-y7-MHu"/>
+                        <outlet property="userSummaryLine2Timer" destination="2jv-g8-du7" id="kYO-cS-6XU"/>
+                        <outlet property="userSummaryLine3" destination="fbZ-2p-wMK" id="TIF-gw-jLX"/>
+                        <outlet property="userSummaryLine4" destination="G7q-5z-jP6" id="WuI-t6-yWK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="117.5"/>
+        </scene>
+        <!--Shot Details Interface Controller-->
+        <scene sceneID="q8p-KN-h2s">
+            <objects>
+                <controller id="83R-il-8Hr" customClass="ShotDetailsInterfaceController">
+                    <items>
+                        <table alignment="left" id="xxE-6n-iBI">
+                            <items>
+                                <tableRow identifier="shotinformation" id="K9n-Dk-MZM" customClass="ShotInformationRowController">
+                                    <group key="rootItem" width="1" alignment="left" id="h6c-Hs-AQj">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="9ZA-57-sMj"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="shotDescription" destination="9ZA-57-sMj" id="oo4-EJ-g9S"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="xxE-6n-iBI" id="ND8-3A-hqk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="118"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="Gze-3j-3HQ">
+            <objects>
+                <glanceController id="7SL-5g-Qji" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" id="9bd-q0-d3l"/>
+                        <group alignment="left" layout="vertical" id="fq2-Sc-75J">
+                            <items>
+                                <label alignment="left" text="Summary 1" minimumScaleFactor="0.5" id="2Pr-jE-4z8">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <group width="1" alignment="left" id="Wnl-FO-grW">
+                                    <items>
+                                        <label width="1" alignment="left" text="Summary 2" minimumScaleFactor="0.5" id="und-B5-VwR">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <timer width="1" alignment="left" format="short" previewedSeconds="3600" id="QEt-2z-RkW">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </timer>
+                                    </items>
+                                </group>
+                                <label alignment="left" text="Summary 3" minimumScaleFactor="0.5" id="Kqn-7Z-Kws">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <label alignment="left" text="Summary 4" minimumScaleFactor="0.5" id="bgb-G3-euu">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="userSummaryLine1" destination="2Pr-jE-4z8" id="Qst-Q6-NAh"/>
+                        <outlet property="userSummaryLine2" destination="und-B5-VwR" id="P6x-oh-Mk9"/>
+                        <outlet property="userSummaryLine3" destination="Kqn-7Z-Kws" id="GUJ-MK-Eaw"/>
+                        <outlet property="userSummaryLine4" destination="bgb-G3-euu" id="0Mn-BL-b6v"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="220" y="391"/>
+        </scene>
+    </scenes>
+</document>
